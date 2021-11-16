@@ -2,6 +2,9 @@
 ### Do not make changes to this file directly
 
 
+"""
+This contains information about me that aren't necessarily specific to one job.
+"""
 type Bio {
   email: String
   github: URL
@@ -16,8 +19,30 @@ A date string, such as 2007-12-03, compliant with the `full-date` format outline
 """
 scalar Date
 
+"""The various positions I have held at various customers."""
+type Position {
+  achievements: [String]
+  company: String
+  employmentType: String
+
+  """The date I stopped / left work for this company or project."""
+  endDate: Date
+  id: String
+  location: String
+  months: Int
+
+  """The date I started at the work."""
+  startDate: Date
+
+  """The title of my position for the project or at the company."""
+  title: String
+  years: Int
+}
+
 type Query {
   bio: Bio
+  position(id: ID): Position
+  positions: [Position]
 }
 
 """

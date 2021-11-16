@@ -12,4 +12,5 @@ export const GQLURL = decorateType(GraphQLURL, {
 });
 
 export * from "./query";
-export { Bio } from "./Bio";
+export * from "./Bio";
+export * from "./Position";
