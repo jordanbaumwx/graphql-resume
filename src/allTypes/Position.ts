@@ -34,7 +34,7 @@ export const Position = objectType({
 
     // Months is modulated by 12 to not have all months included.
     t.int("months", {
-      description: "How many full months I was at the company for."
+      description: "How many full months I was at the company for.",
       resolve: ({ endDate, startDate }) =>
         differenceInMonths(
           endDate ? new Date(endDate) : new Date(),
@@ -43,13 +43,14 @@ export const Position = objectType({
     });
 
     t.string("employmentType", {
-      description: "The nature of my employment for the company."
+      description: "The nature of my employment for the company.",
     });
     t.string("location", {
-      description: "The location of the company."
+      description: "The location of the company.",
     });
     t.list.string("achievements", {
-      description: "A list of things I accomplished during my time with the project or company.",
+      description:
+        "A list of things I accomplished during my time with the project or company.",
       resolve: (position) => position.achievements,
     });
   },

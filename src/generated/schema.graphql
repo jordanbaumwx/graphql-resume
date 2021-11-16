@@ -21,14 +21,25 @@ scalar Date
 
 """The various positions I have held at various customers."""
 type Position {
+  """
+  A list of things I accomplished during my time with the project or company.
+  """
   achievements: [String]
+
+  """The name of the company I worked for."""
   company: String
+
+  """The nature of my employment for the company."""
   employmentType: String
 
   """The date I stopped / left work for this company or project."""
   endDate: Date
   id: String
+
+  """The location of the company."""
   location: String
+
+  """How many full months I was at the company for."""
   months: Int
 
   """The date I started at the work."""
@@ -36,6 +47,8 @@ type Position {
 
   """The title of my position for the project or at the company."""
   title: String
+
+  """How many full years I was at the company for."""
   years: Int
 }
 
