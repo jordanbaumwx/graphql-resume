@@ -2,6 +2,8 @@ import { objectType } from "@nexus/schema";
 
 export const Bio = objectType({
   name: "Bio",
+  description:
+    "This contains information about me that aren't necessarily specific to one job.",
   definition(t) {
     t.string("name");
     t.string("tagline");
