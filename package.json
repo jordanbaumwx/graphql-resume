@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.17",
     "@nexus/schema": "^0.20.1",
     "@types/react": "^17.0.34",
     "apollo-server": "^3.5.0",
@@ -20,6 +21,7 @@
     "next": "^11.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-syntax-highlighter": "^15.4.5",
     "typescript": "^4.4.4"
   },
   "devDependencies": {
