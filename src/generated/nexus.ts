@@ -3,7 +3,7 @@
  * Do not make changes to this file directly
  */
 
-
+import * as faces from "./../interfaces"
 import { core } from "@nexus/schema"
 declare global {
   interface NexusGenCustomInputMethods<TypeName extends string> {
@@ -52,19 +52,8 @@ export interface NexusGenScalars {
 }
 
 export interface NexusGenObjects {
-  Bio: { // root type
-    email?: string | null; // String
-    name?: string | null; // String
-    objective?: string | null; // String
-    tagline?: string | null; // String
-  }
-  Position: { // root type
-    company?: string | null; // String
-    employmentType?: string | null; // String
-    id?: string | null; // String
-    location?: string | null; // String
-    title?: string | null; // String
-  }
+  Bio: faces.Bio;
+  Position: faces.Position;
   Query: {};
 }
 

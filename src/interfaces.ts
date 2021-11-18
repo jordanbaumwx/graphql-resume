@@ -1,4 +1,4 @@
-export interface BioInterface {
+export interface Bio {
   name: string;
   tagline: string;
   email: string;
@@ -7,7 +7,7 @@ export interface BioInterface {
   objective: string;
 }
 
-export interface PositionInterface {
+export interface Position {
   id: string;
   title: string;
   company: string;
