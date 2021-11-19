@@ -1,7 +1,17 @@
+/**
+ * This provides information on where to point queries to the data.
+ *
+ * @author Jordan Baumgardner
+ * @history 2021-11-18 Jordan Baumgardner - Original
+ */
+
 import { queryType, idArg } from "@nexus/schema";
-import { data } from "../data";
 import { Bio, Position } from "./index";
 
+// Import data as the data source.
+import { data } from "../data";
+
+// Setup the queries available. In this case: bio, positions, and position.
 export const Query = queryType({
   definition(t) {
     t.field("bio", {

@@ -1,3 +1,4 @@
+// This purely exports the data for the app.
 export const data = {
   bio: {
     name: "Jordan Baumgardner",

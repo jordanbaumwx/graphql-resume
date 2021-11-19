@@ -1,3 +1,10 @@
+/**
+ * This is a common place to store all graphql queries the user interface needs to use.
+ *
+ * @author Jordan Baumgardner
+ * @history 2021-11-18 Jordan Baumgardner - Original
+ */
+
 import { gql } from "@apollo/client";
 
 export const ResumeQuery = gql`

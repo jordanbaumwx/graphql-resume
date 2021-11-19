@@ -1,3 +1,9 @@
+/**
+ * This provides the information on how to query the position.
+ *
+ * @author Jordan Baumgardner
+ * @history 2021-11-18 Jordan Baumgardner - Original
+ */
 import { objectType } from "@nexus/schema";
 import { differenceInYears, differenceInMonths } from "date-fns";
 

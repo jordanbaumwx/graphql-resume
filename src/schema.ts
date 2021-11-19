@@ -1,3 +1,11 @@
+/**
+ * Defines information for the nexus package. Including output paths of schema and types.
+ * Also defined is the interface location and type maps.
+ *
+ * @author Jordan Baumgardner
+ * @history 2021-11-18 Jordan Baumgardner - Original
+ */
+
 import { makeSchema } from "@nexus/schema";
 import * as types from "./allTypes";
 import path from "path";
