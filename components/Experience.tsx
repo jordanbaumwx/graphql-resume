@@ -8,7 +8,7 @@ export default function Experience({position}) {
       ].filter(str => str).join(" ");
       
     return (
-        <div key={position.id} className='pt-4 px-6'>
+        <div className='pt-4 px-6'>
             <div className="grid grid-cols-1">
                 <h3 className="col-span-1 text-gray-900 font-medium text-xl align-left">{position.title}</h3>
                 <p className="col-span-2 text-gray-700 font-light text-xl align-right">{position.company} | {position.location}</p>

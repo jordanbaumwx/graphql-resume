@@ -90,7 +90,7 @@ export default function Home() {
                 {
                   positions.map(position => {
                     return(
-                      <Experience position={position} />
+                      <Experience key={position.id} position={position} />
                     )
                   })
                 }
