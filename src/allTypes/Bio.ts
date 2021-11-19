@@ -1,3 +1,9 @@
+/**
+ * This provides the information on how to query the bio.
+ *
+ * @author Jordan Baumgardner
+ * @history 2021-11-18 Jordan Baumgardner - Original
+ */
 import { objectType } from "@nexus/schema";
 
 export const Bio = objectType({
