@@ -19,11 +19,11 @@ export default function Experience({position}) {
       ].filter(str => str).join(" ");
       
     return (
-        <div className='pt-4 px-6'>
+        <div className='pt-4 px-6 pb-4'>
             {/* Display company information and my position title. */}
             <div className="grid grid-cols-1">
-                <h3 className="col-span-1 text-gray-900 font-medium text-xl align-left">{position.title}</h3>
-                <p className="col-span-2 text-gray-700 font-light text-xl align-right">{position.company} | {position.location}</p>
+                <h3 className="col-span-1 text-gray-900 sm:font-medium text-m sm:text-xl sm:align-left">{position.title}</h3>
+                <p className="col-span-2 text-gray-700 p=2 font-light text-s sm:text-xl sm:align-right">{position.company} | {position.location}</p>
             </div>
             {/* Display information about the time I was with the company. */}
             <p className="text-gray-700 font-light">
