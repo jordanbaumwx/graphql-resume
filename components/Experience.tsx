@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.css";
 import {format} from "date-fns"
 
 export default function Experience({position}) {
