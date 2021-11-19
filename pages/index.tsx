@@ -33,7 +33,7 @@ export default function Home() {
   // If the query is loading, show a loading message.
   if (loading) { 
     return  (
-      <div className="md:container md:mx-auto object-center p-20 align-middle">
+      <div className="container mx-auto object-center p-20 align-middle">
           <h1 className="font-black md:mx-auto text-7xl object-center block text-center"> Jordan Baumgardner </h1>
           <h1 className="block md:mx-auto object-center text-center"> Loading Resume </h1>
       </div>
@@ -46,7 +46,7 @@ export default function Home() {
   */
   const {bio, positions} = data;
   return (
-    <div className="md:container md:mx-auto object-center align-middle">
+    <div className="container mx-auto object-center align-middle">
       {/* Setup the browser meta-information. */}
       <Head>
         <title>{bio.name} Resume</title>
@@ -55,17 +55,17 @@ export default function Home() {
       </Head>
 
       {/* Setup the container */}
-      <main className="md:container md:mx-auto object-center p-4 align-middle divide-y divide-gray-700">
+      <main className="container mx-auto object-center p-4 align-middle divide-y divide-gray-700">
         {/* This acts as the header for the resume and displays basic information about me. */}
         <div className="Header">
-          <h1 className="font-black md:mx-auto text-3xl"> {bio.name} </h1>
-          <h2 className="text-gray-700 md:mx-auto text-xl"> {bio.tagline} </h2>
+          <h1 className="font-black mx-auto text-3xl"> {bio.name} </h1>
+          <h2 className="text-gray-700 mx-auto text-xl"> {bio.tagline} </h2>
         </div>
 
         {/* Here is where the meat of the bio lays. This splits the page into 2 columns (1/3 & 2/3) */}
-        <div className="grid grid-cols-3 divide-x divide-gray-700 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3  sm:divide-x sm:divide-gray-700 p-4">
           {/* Setup the 1/3rd column width which is contact and query information. */}
-          <div className="col-span-1 md:container md:mx-auto object-center p-4">
+          <div className="order-last sm:order-first col-span-1 md:container md:mx-auto object-center p-4">
             <div className="">
               {/* Display the contact component. */}
               <Contact bio={bio}/>
@@ -86,7 +86,7 @@ export default function Home() {
             {/* Add information below my profile for my experiences */}
             <div>
               <h2 className="text-gray-700 font-bold md:mx-auto text-2xl pt-2">Experience</h2>
-              <div className="overflow-y-auto">
+              <div className="overflow-y-auto divide-y divide-gray-700">
                 {
                   positions.map(position => {
                     return(
