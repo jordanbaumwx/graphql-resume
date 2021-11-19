@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.css";
 import { FaGithub } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 import {MdWebAsset} from 'react-icons/md';
