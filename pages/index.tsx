@@ -16,29 +16,8 @@ import {print} from "graphql/language/printer";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 
-const ResumeQuery = gql`
-query ResumeQuery {
-  bio {
-    name
-    email
-    tagline
-    website
-    github
-    objective
-  }
-  positions {
-    id
-    title
-    company
-    location
-    years
-    months
-    startDate
-    endDate
-    achievements
-  }
-}
-`;
+// Import queries used in this file.
+import {ResumeQuery} from "../src/queries";
 
 
 export default function Home() {
