@@ -1,16 +1,12 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import resumeStyles from "../styles/Resume.module.css";
-
 import {useQuery, gql} from "@apollo/client";
 import {Prism as SyntaxHighlighter} from "react-syntax-highlighter"
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import {print} from "graphql/language/printer";
 
+// Custom Components
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
-
-
 
 const ResumeQuery = gql`
   query ResumeQuery{
@@ -54,7 +50,6 @@ export default function Home() {
 
   const {bio, positions} = data;
   return (
-    //p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4
     <div className="md:container md:mx-auto object-center align-middle">
       <Head>
         <title>{bio.name} Resume</title>
@@ -99,8 +94,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 }
