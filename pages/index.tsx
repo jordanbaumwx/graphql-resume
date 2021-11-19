@@ -7,6 +7,7 @@
  */
 
 import Head from "next/head";
+import Image from "next/image";
 import {useQuery} from "@apollo/client";
 import {Prism as SyntaxHighlighter} from "react-syntax-highlighter"
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
@@ -18,6 +19,9 @@ import Contact from "../components/Contact";
 
 // Import queries used in this file.
 import {ResumeQuery} from "../src/queries";
+
+// Import Media
+import profile from "../src/profile.jpg"
 
 
 export default function Home() {
@@ -57,9 +61,20 @@ export default function Home() {
       {/* Setup the container */}
       <main className="container mx-auto object-center p-4 align-middle divide-y divide-gray-700">
         {/* This acts as the header for the resume and displays basic information about me. */}
-        <div className="Header">
-          <h1 className="font-black mx-auto text-3xl"> {bio.name} </h1>
-          <h2 className="text-gray-700 mx-auto text-xl"> {bio.tagline} </h2>
+        <div className="Header sm:flex mx-auto items-center">
+          <Image 
+            className="rounded-full mx-auto align-bottom" 
+            layout="fixed"
+            objectFit="cover"
+            src={profile} 
+            height={60}
+            width={60}
+            alt="Profile Photo of Jordan Baumgardner." 
+          />
+          <div className="pl-2 ">
+            <h1 className="font-black mx-auto text-3xl"> {bio.name} </h1>
+            <h2 className="text-gray-700 mx-auto text-xl"> {bio.tagline} </h2>
+          </div>
         </div>
 
         {/* Here is where the meat of the bio lays. This splits the page into 2 columns (1/3 & 2/3) */}
