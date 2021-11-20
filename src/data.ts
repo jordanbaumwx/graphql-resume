@@ -18,6 +18,9 @@ export const data = {
       "TypeScript",
       "JavaScript",
       "React.js",
+      "AWS",
+      "CI/CD",
+      "Docker",
     ],
   },
   positions: [
