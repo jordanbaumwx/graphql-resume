@@ -84,6 +84,16 @@ export default function Home() {
             <div className="">
               {/* Display the contact component. */}
               <Contact bio={bio}/>
+              {/* Display skill pills. */}
+              <div className="grid grid-cols-3">
+              <h2 className="text-gray-700 font-bold text-2xl col-span-3 content-start pb-2"> Skills </h2>
+
+                {bio.skills.map((skill) => (
+                  <div key={skill} className="col-span-1 rounded-full my-1 mx-5 text-center bg-purple-600 text-white ">
+                    {skill}
+                    </div>
+                ))}
+              </div>
               {/* This display the graphql query */}
               <p> Query the API: /api/graphql </p>
               <SyntaxHighlighter language="graphql" style={vscDarkPlus}>

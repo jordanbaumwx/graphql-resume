@@ -17,5 +17,9 @@ export const Bio = objectType({
     t.string("objective");
     t.url("website", { resolve: (bio) => new URL(bio.website) });
     t.url("github", { resolve: (bio) => new URL(bio.github) });
+    t.list.string("skills", {
+      description: "A list of my skills.",
+      resolve: (bio) => bio.skills,
+    });
   },
 });

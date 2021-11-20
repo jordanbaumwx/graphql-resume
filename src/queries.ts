@@ -16,6 +16,7 @@ export const ResumeQuery = gql`
       website
       github
       objective
+      skills
     }
     positions {
       id

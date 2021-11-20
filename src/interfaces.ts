@@ -12,6 +12,7 @@ export interface Bio {
   github: string;
   website: string;
   objective: string;
+  skills: string[];
 }
 
 export interface Position {

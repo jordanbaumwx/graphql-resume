@@ -8,17 +8,18 @@ export const data = {
     github: "https://github.com/jordanbaumwx",
     objective:
       "Software Engineer with over 5 years professional experience performing development of meteorological related software systems including hardware data collection and manipulation, algorithms and display systems for delivery at private entities, international weather services and international airport agencies, in addition to development of several web-based applications.",
+    skills: [
+      "Python",
+      "Go",
+      "SQL",
+      "Node.JS",
+      "React",
+      "GraphQL",
+      "TypeScript",
+      "JavaScript",
+      "React.js",
+    ],
   },
-  skills: [
-    "Python",
-    "Go",
-    "SQL",
-    "Node.JS",
-    "React",
-    "GraphQL",
-    "TypeScript",
-    "JavaScript",
-  ],
   positions: [
     {
       id: "1",

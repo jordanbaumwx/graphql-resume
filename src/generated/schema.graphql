@@ -10,6 +10,9 @@ type Bio {
   github: URL
   name: String
   objective: String
+
+  """A list of my skills."""
+  skills: [String]
   tagline: String
   website: URL
 }

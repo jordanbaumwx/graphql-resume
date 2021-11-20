@@ -73,6 +73,7 @@ export interface NexusGenFieldTypes {
     github: NexusGenScalars['URL'] | null; // URL
     name: string | null; // String
     objective: string | null; // String
+    skills: Array<string | null> | null; // [String]
     tagline: string | null; // String
     website: NexusGenScalars['URL'] | null; // URL
   }
@@ -101,6 +102,7 @@ export interface NexusGenFieldTypeNames {
     github: 'URL'
     name: 'String'
     objective: 'String'
+    skills: 'String'
     tagline: 'String'
     website: 'URL'
   }
