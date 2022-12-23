@@ -70,7 +70,7 @@ export default function Home() {
             width={60}
             alt="Profile Photo of Jordan Baumgardner."
           />
-          <div className="pl-2 ">
+          <div className="pl-2 absolute top-0 right-0">
             <h1 className="font-black mx-auto text-3xl"> {bio.name} </h1>
             <h2 className="text-gray-700 mx-auto text-xl"> {bio.tagline} </h2>
           </div>
