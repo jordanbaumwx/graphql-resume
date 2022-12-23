@@ -2,12 +2,12 @@
 export const data = {
   bio: {
     name: 'Jordan Baumgardner',
-    tagline: 'Software Engineer',
+    tagline: 'Senior Software Engineer',
     email: 'career@jordanbaumgardner.com',
     website: 'https://jordanbaumgardner.com',
     github: 'https://github.com/jordanbaumwx',
     objective:
-      'Software Engineer with over 5 years professional experience performing development of meteorological related software systems including hardware data collection and manipulation, algorithms and display systems for delivery at private entities, international weather services and international airport agencies, in addition to development of several web-based applications.',
+      'Senior Software Engineer with over 6 years of professional experience developing software systems including accounting software with commodity trading tracking, REST APIs, hardware data collection and manipulation, proprietary algorithms and display systems for delivery at private entities, international weather services and international airport agencies, in addition to the development of several web-based applications.',
     skills: [
       'Python',
       'Go',
