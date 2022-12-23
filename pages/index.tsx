@@ -63,21 +63,20 @@ export default function Home() {
         {/* This acts as the header for the resume and displays basic information about me. */}
         <div className="Header sm:flex mx-auto items-center">
           <Image
-            className="rounded-full mx-auto align-bottom"
-            style={{position: "fixed", objectFit: "cover"}}
+            className="rounded-full absolute mx-auto align-bottom  top-0 left-2"
             src={profile}
             height={60}
             width={60}
             alt="Profile Photo of Jordan Baumgardner."
           />
-          <div className="pl-2 ">
+          <div className="pl-2 mx-auto absolute top-0 right-2">
             <h1 className="font-black mx-auto text-3xl"> {bio.name} </h1>
             <h2 className="text-gray-700 mx-auto text-xl"> {bio.tagline} </h2>
           </div>
         </div>
 
         {/* Here is where the meat of the bio lays. This splits the page into 2 columns (1/3 & 2/3) */}
-        <div className="grid grid-cols-1 sm:grid-cols-3  sm:divide-x sm:divide-gray-700 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 w-full sm:divide-x sm:divide-gray-700 p-0 mt-14">
           {/* Setup the 1/3rd column width which is contact and query information. */}
           <div className="order-last sm:order-first col-span-1 md:container md:mx-auto object-center p-4">
             <div className="">
