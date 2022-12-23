@@ -1,7 +1,7 @@
 /**
  * This is the main page for the resume website.
  * It provides the layout and a few components.
- * 
+ *
  * @author Jordan Baumgardner
  * @history 2021-11-18 Jordan Baumgardner - Original
  */
@@ -35,7 +35,7 @@ export default function Home() {
   }
 
   // If the query is loading, show a loading message.
-  if (loading) { 
+  if (loading) {
     return  (
       <div className="container mx-auto object-center p-20 align-middle">
           <h1 className="font-black md:mx-auto text-7xl object-center block text-center"> Jordan Baumgardner </h1>
@@ -62,14 +62,13 @@ export default function Home() {
       <main className="container mx-auto object-center p-4 align-middle divide-y divide-gray-700">
         {/* This acts as the header for the resume and displays basic information about me. */}
         <div className="Header sm:flex mx-auto items-center">
-          <Image 
-            className="rounded-full mx-auto align-bottom" 
-            layout="fixed"
-            objectFit="cover"
-            src={profile} 
+          <Image
+            className="rounded-full mx-auto align-bottom"
+            style={{position: "fixed", objectFit: "cover"}}
+            src={profile}
             height={60}
             width={60}
-            alt="Profile Photo of Jordan Baumgardner." 
+            alt="Profile Photo of Jordan Baumgardner."
           />
           <div className="pl-2 ">
             <h1 className="font-black mx-auto text-3xl"> {bio.name} </h1>
@@ -99,7 +98,7 @@ export default function Home() {
               <SyntaxHighlighter language="graphql" style={vscDarkPlus}>
                 {print(ResumeQuery)}
               </SyntaxHighlighter>
-            </div> 
+            </div>
           </div>
           {/* Setup the 2/3rd column width which is profile and experience */}
           <div className="col-span-2 md:container md:mx-auto object-center p-4 divide-y divide-gray-700">
