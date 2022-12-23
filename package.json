@@ -12,7 +12,7 @@
     "@nexus/schema": "^0.20.1",
     "@types/react": "^17.0.34",
     "apollo-server": "^3.5.0",
-    "apollo-server-core": "^3.10.1",
+    "apollo-server-core": "^3.11.1",
     "apollo-server-micro": "^3.5.0",
     "date-fns": "^2.25.0",
     "graphql": "^15.7.2",
