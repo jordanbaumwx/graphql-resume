@@ -77,7 +77,7 @@ export default function Home() {
         </div>
 
         {/* Here is where the meat of the bio lays. This splits the page into 2 columns (1/3 & 2/3) */}
-        <div className="grid grid-cols-1 sm:grid-cols-3  sm:divide-x sm:divide-gray-700 p-4 pt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3  sm:divide-x sm:divide-gray-700 p-4 mt-4">
           {/* Setup the 1/3rd column width which is contact and query information. */}
           <div className="order-last sm:order-first col-span-1 md:container md:mx-auto object-center p-4">
             <div className="">
